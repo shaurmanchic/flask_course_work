@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-20 09:43+0300\n"
-"PO-Revision-Date: 2018-05-20 09:50+0300\n"
+"POT-Creation-Date: 2018-05-20 10:29+0300\n"
+"PO-Revision-Date: 2018-05-20 10:27+0300\n"
 "Last-Translator: \n"
 "Language: uk\n"
 "Language-Team: uk <LL@li.org>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 1.8.7.1\n"
 
 #: app_module/__init__.py:22
 msgid "Please log in to access this page."
@@ -120,11 +119,11 @@ msgstr "Повідомлення"
 msgid "Your post is now live!"
 msgstr "Ваш пост вже в мережі!"
 
-#: app_module/main/routes.py:45
+#: app_module/main/routes.py:45 app_module/templates/base.html:21
 msgid "Home"
 msgstr "Головна"
 
-#: app_module/main/routes.py:60
+#: app_module/main/routes.py:60 app_module/templates/base.html:22
 msgid "Explore"
 msgstr "Знаходь"
 
@@ -180,22 +179,38 @@ msgstr "Експортуємо пости..."
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s сказав %(when)s"
 
+#: app_module/templates/base.html:4
+msgid "Welcome to Microblog"
+msgstr "Ласкаво просимо до Мікроблогу"
+
+#: app_module/templates/base.html:33
+msgid "Login"
+msgstr "Увійти"
+
+#: app_module/templates/base.html:36 app_module/templates/messages.html:4
+msgid "Messages"
+msgstr "Повідомлення"
+
+#: app_module/templates/base.html:45
+msgid "Profile"
+msgstr "Профіль"
+
+#: app_module/templates/base.html:46
+msgid "Logout"
+msgstr "Вийти"
+
 #: app_module/templates/index.html:5
 #, python-format
 msgid "Hi, %(username)s!"
 msgstr "Привіт, %(username)s!"
 
-#: app_module/templates/index.html:17
+#: app_module/templates/index.html:17 app_module/templates/user.html:37
 msgid "Newer posts"
 msgstr "Новіші публікації"
 
-#: app_module/templates/index.html:22
+#: app_module/templates/index.html:22 app_module/templates/user.html:42
 msgid "Older posts"
 msgstr "Старіші публікації"
-
-#: app_module/templates/messages.html:4
-msgid "Messages"
-msgstr "Повідомлення"
 
 #: app_module/templates/messages.html:12
 msgid "Newer messages"
@@ -222,27 +237,43 @@ msgstr "Наступні результати"
 msgid "Send Message to %(recipient)s"
 msgstr "Надіслати повідомлення %(recipient)s"
 
-#: app_module/templates/user_popup.html:9
+#: app_module/templates/user.html:8
+msgid "User"
+msgstr "Користувач"
+
+#: app_module/templates/user.html:11 app_module/templates/user_popup.html:9
 msgid "Last seen on"
 msgstr "Останній раз був"
 
-#: app_module/templates/user_popup.html:11
+#: app_module/templates/user.html:13 app_module/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d послідовників"
 
-#: app_module/templates/user_popup.html:11
+#: app_module/templates/user.html:13 app_module/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d переслідує"
 
-#: app_module/templates/user_popup.html:14
+#: app_module/templates/user.html:15
+msgid "Edit your profile"
+msgstr "Редагувати свій профіль"
+
+#: app_module/templates/user.html:17
+msgid "Export your posts"
+msgstr "Експортувати пости"
+
+#: app_module/templates/user.html:20 app_module/templates/user_popup.html:14
 msgid "Follow"
 msgstr "Слідувати"
 
-#: app_module/templates/user_popup.html:16
+#: app_module/templates/user.html:22 app_module/templates/user_popup.html:16
 msgid "Unfollow"
 msgstr "Перестати слідувати"
+
+#: app_module/templates/user.html:25
+msgid "Send private message"
+msgstr "Відправити особисте повідомлення"
 
 #: app_module/templates/auth/login.html:12
 msgid "New User?"
@@ -281,20 +312,3 @@ msgstr "Виникла несподівана помилка"
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "Адміністратор вже було сповіщено. Вибачте за незручності!"
 
-#~ msgid "Welcome to Microblog"
-#~ msgstr "Ласкаво просимо до Мікроблогу"
-
-#~ msgid "Login"
-#~ msgstr "Увійти"
-
-#~ msgid "Profile"
-#~ msgstr "Профіль"
-
-#~ msgid "Logout"
-#~ msgstr "Вийти"
-
-#~ msgid "User"
-#~ msgstr "Користувач"
-
-#~ msgid "Edit your profile"
-#~ msgstr "Редагувати свій профіль"
