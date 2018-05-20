@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-20 14:10+0300\n"
-"PO-Revision-Date: 2018-05-20 14:11+0300\n"
+"POT-Creation-Date: 2018-05-20 23:06+0300\n"
+"PO-Revision-Date: 2018-05-20 23:07+0300\n"
 "Last-Translator: \n"
 "Language: uk\n"
 "Language-Team: uk <LL@li.org>\n"
@@ -25,8 +25,8 @@ msgid "Please log in to access this page."
 msgstr "Будь ласка, увійдіть, щоб отримати доступ до цієї сторінки."
 
 #: app_module/auth/email.py:8
-msgid "[Babak] Reset Your Password"
-msgstr "[Бабак] Скиньте Свій Пароль"
+msgid "[Pymicro] Reset Your Password"
+msgstr "[Pymicro] Скиньте Свій Пароль"
 
 #: app_module/auth/forms.py:9 app_module/auth/forms.py:16
 #: app_module/main/forms.py:10
@@ -181,8 +181,8 @@ msgid "%(username)s said %(when)s"
 msgstr "%(username)s сказав %(when)s"
 
 #: app_module/templates/base.html:4
-msgid "Welcome to Babak"
-msgstr "Ласкаво просимо до Бабаку"
+msgid "Welcome to Pymicro"
+msgstr "Ласкаво просимо до Pymicro"
 
 #: app_module/templates/base.html:33
 msgid "Login"
@@ -318,3 +318,9 @@ msgstr "Адміністратор вже було сповіщено. Виба�
 
 #~ msgid "Welcome to Microblog"
 #~ msgstr "Ласкаво просимо до Мікроблогу"
+
+#~ msgid "[Babak] Reset Your Password"
+#~ msgstr "[Бабак] Скиньте Свій Пароль"
+
+#~ msgid "Welcome to Babak"
+#~ msgstr "Ласкаво просимо до Бабаку"
