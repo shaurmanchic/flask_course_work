@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-20 10:29+0300\n"
-"PO-Revision-Date: 2018-05-20 10:31+0300\n"
+"POT-Creation-Date: 2018-05-20 14:10+0300\n"
+"PO-Revision-Date: 2018-05-20 14:12+0300\n"
 "Last-Translator: \n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
@@ -24,8 +24,8 @@ msgid "Please log in to access this page."
 msgstr "Por favor ingrese para acceder a esta página."
 
 #: app_module/auth/email.py:8
-msgid "[Microblog] Reset Your Password"
-msgstr "[Microblog] Nueva Contraseña"
+msgid "[Babak] Reset Your Password"
+msgstr "[Babak] Nueva Contraseña"
 
 #: app_module/auth/forms.py:9 app_module/auth/forms.py:16
 #: app_module/main/forms.py:10
@@ -178,8 +178,8 @@ msgid "%(username)s said %(when)s"
 msgstr "%(username)s dijo %(when)s"
 
 #: app_module/templates/base.html:4
-msgid "Welcome to Microblog"
-msgstr "Bienvenido a Microblog"
+msgid "Welcome to Babak"
+msgstr "Bienvenido a Babak"
 
 #: app_module/templates/base.html:33
 msgid "Login"
@@ -309,3 +309,9 @@ msgstr "Ha ocurrido un error inesperado"
 #: app_module/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
+
+#~ msgid "[Microblog] Reset Your Password"
+#~ msgstr "[Microblog] Nueva Contraseña"
+
+#~ msgid "Welcome to Microblog"
+#~ msgstr "Bienvenido a Microblog"
