@@ -39,3 +39,4 @@ WTForms==2.1
 # requirements for Heroku
 #psycopg2==2.7.4
 #gunicorn==19.8.1
+psycopg2-binary==2.7.4
