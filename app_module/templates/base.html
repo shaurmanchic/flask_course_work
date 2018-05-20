@@ -24,8 +24,7 @@
                 {% if g.search_form %}
                 <form class="navbar-form navbar-left" method="get" action="{{ url_for('main.search') }}">
                     <div class="form-group">
-                        {{ g.search_form.q(size=20, class='form-control',
-                        placeholder=g.search_form.q.label.text) }}
+                        {{ g.search_form.q(size=20, class='form-control', placeholder=g.search_form.q.label.text) }}
                     </div>
                 </form>
                 {% endif %}
@@ -34,12 +33,11 @@
                     <li><a href="{{ url_for('auth.login') }}">{{ _('Login') }}</a></li>
                     {% else %}
                     <li>
-                        <a href="{{ url_for('main.messages') }}">
-                            {{ _('Messages') }}
+                        <a href="{{ url_for('main.messages') }}">{{ _('Messages') }}
                             {% set new_messages = current_user.new_messages() %}
                             <span id="message_count" class="badge"
                                   style="visibility: {% if new_messages %}visible
-                                                     {% else %}hidden {% endif %};">
+                                                     {% else %}hidden{% endif %};">
                                 {{ new_messages }}
                             </span>
                         </a>
@@ -127,33 +125,13 @@
                 }
             );
         });
-
-        {% if current_user.is_authenticated %}
-        $(function() {
-            var since = 0;
-            setInterval(function() {
-                $.ajax('{{ url_for('main.notifications') }}?since=' + since).done(
-                    function(notifications) {
-                        for (var i = 0; i < notifications.length; i++) {
-                            if (notifications[i].name == 'unread_message_count')
-                                set_message_count(notifications[i].data);
-                            since = notifications[i].timestamp;
-                        }
-                    }
-                );
-            }, 10000);
-        });
-        {% endif %}
-
         function set_message_count(n) {
             $('#message_count').text(n);
             $('#message_count').css('visibility', n ? 'visible' : 'hidden');
         }
-
         function set_task_progress(task_id, progress) {
             $('#' + task_id + '-progress').text(progress);
         }
-
         {% if current_user.is_authenticated %}
         $(function() {
             var since = 0;
@@ -176,5 +154,6 @@
                 );
             }, 10000);
         });
+        {% endif %}
     </script>
 {% endblock %}
